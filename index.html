@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello Vue.js</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	<script type="text/javascript" src="index.js"></script>
+	<div id="app">
+		{{message}}
+	</div>
+	<div id="app-2">
+		<span-v-bind:title="message">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+		</span>
+	</div>
+	<div id="app-3">
+		<span v-if="seen">Now you see me</span>
+	</div>
+	<div id="app-4">
+		<ol>
+			<li v-for="todo in todos">
+				{{ todo.text }}
+			</li>	
+		</ol>
+	</div>
+	<div id="app-5">
+		<p>{{ message }}</p>
+		<button v-on:click="reverseMessage">Reverse message</button>
+	</div>
+	<div id="app-6">
+		<p>{{ message }}</p>
+		<input v-model="message">
+	</div>
+</body>
+</html>

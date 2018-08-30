@@ -1,0 +1,14 @@
+{
+  "name": "hello-vuejs",
+  "version": "1.0.0",
+  "description": "Test application for practicing Vue.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Monika Jandrevska",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.5.17"
+  }
+}
