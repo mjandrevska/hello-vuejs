@@ -10,7 +10,7 @@
 		{{message}}
 	</div>
 	<div id="app-2">
-		<span-v-bind:title="message">
+		<span v-bind:title="message">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 		</span>
 	</div>
@@ -31,6 +31,15 @@
 	<div id="app-6">
 		<p>{{ message }}</p>
 		<input v-model="message">
+	</div>
+	<div id="app-7">
+		<ol>
+			<todo-item 
+			v-for="item in groceryList"
+			v-bind:todo="item"
+			v-bind:key="item.id">
+			</todo-item>	
+		</ol>
 	</div>
 </body>
 </html>

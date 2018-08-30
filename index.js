@@ -9,7 +9,7 @@ window.onload = function(){
   var app2 = new Vue({
     el: '#app-2',
     data:{
-      message:'You loaded this page on ' +new Date().toLocaleString()
+      message:'You loaded this page on ' + new Date().toLocaleString()
     }
   });
 
@@ -47,6 +47,22 @@ window.onload = function(){
     el: '#app-6',
     data: {
       message: 'Hello Vue!'
+    }
+  });
+
+  Vue.component('todo-item', {
+    props: ['todo'],
+    template: '<li>{{ todo.text }}</li>'
+  })
+
+  var app7 = new Vue({
+    el: '#app-7',
+    data:{
+      groceryList:[
+        { id: 0, text: 'Vegetables' },
+        { id: 1, text: 'Cheese' },
+        { id: 2, text: 'Whatever else humans are supposed to eat' }
+      ]
     }
   });
 };
