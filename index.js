@@ -82,15 +82,18 @@ window.onload = function(){
     }
   });
 
-  // var app10 = new Vue({
-  //   el:'#app-10',
-  //   data:{
-  //     message: 'Hello'
-  //   },
-  //   computed: {
-  //     reversedMessage: function(){
-  //       return this.message.split('').reverse().join('')
-  //     }
-  //   }
-  // });
+  var app10 = new Vue({
+    el:'#app-10',
+    data:{
+      message: 'Hello'
+    },
+    computed: {
+      reversedMessage: function(){
+        return this.message.split('').reverse().join('')
+      }
+    }
+  });
+  console.log(app10.reversedMessage);
+  app10.message = 'Goodbye';
+  console.log(app10.reversedMessage);
 };
