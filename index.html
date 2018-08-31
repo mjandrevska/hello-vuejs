@@ -41,5 +41,22 @@
 			</todo-item>	
 		</ol>
 	</div>
+	<span id="app-8">New message: {{ msg }}</span>
+	<div>
+		<p>Using mustaches: {{ rawHtml }}</p>
+		<p>Using v-html directive: <span v-html="rawHtml">This should be red</span></p>
+	</div>
+	<div id="app-9">
+		<button v-on:click="doSomething">Button</button>	
+	</div>
+	<form v-on:submit.prevent="onSubmit">Submit</form>
+	<a v-bind:href="url"> ... </a>
+	<a :href="url"> ... </a>
+	<button v-on:click="doSomething2">...</div>
+	<button @click="doSomething2">...</button>
+	<!-- <div id="app-10">
+		<p>Original message: "{{ message }}"</p>
+		<p>Computed reversed message: "{{ reversedMessage }}"</p>
+	</div> -->
 </body>
 </html>

@@ -65,4 +65,32 @@ window.onload = function(){
       ]
     }
   });
+
+  var app8 = new Vue({
+    el: '#app-8',
+    data: {
+      msg: 'This is another message to show'
+    }
+  });
+
+  var app9 = new Vue({
+    el: '#app-9',
+    methods:{
+      doSomething: function(){
+        alert('Hello')
+      }
+    }
+  });
+
+  // var app10 = new Vue({
+  //   el:'#app-10',
+  //   data:{
+  //     message: 'Hello'
+  //   },
+  //   computed: {
+  //     reversedMessage: function(){
+  //       return this.message.split('').reverse().join('')
+  //     }
+  //   }
+  // });
 };
